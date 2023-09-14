@@ -6,9 +6,18 @@ class ScreenOnBoarding extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       backgroundColor: NotesColors.appColor,
       body: SafeArea(
+        // child: Center(
+        //   child: Container(
+        //     height: screenHeight * 0.5,
+        //     width: screenWidth * 0.8,
+        //     color: Colors.black,
+        //   ),
+        // ),
         child: Column(
           children: [
             Image.asset('assets/images/Illustration.png'),
